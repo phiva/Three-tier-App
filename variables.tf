@@ -22,20 +22,4 @@ variable "azs" {
   default     = ["us-east-1a", "us-east-1b"]
 }
 
-variable "instance_count" {
-  description = "Número de instâncias EC2 a serem criadas"
-  type        = number
-  default     = 2
-}
 
-variable "ami_id" {
-  description = "AMI ID para criar as instâncias EC2"
-  type        = string
-  default     = "ami-020cba7c55df1f615"
-}
-
-variable "instance_type" {
-  description = "Tipo da instância EC2"
-  type        = string
-  default     = "t2.micro"
-}
